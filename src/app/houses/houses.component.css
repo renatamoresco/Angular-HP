@@ -1,0 +1,79 @@
+.bg {
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div[ng-view] {
+  height: 100%;
+}
+h1 {
+  color: #0d0d0d;
+  font-size: 3em;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+h2 {
+  color: #090909;
+  font-size: 3em;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 2px;
+  margin: 50px;
+}
+h3 {
+  color: #090909;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+th {
+  color: #090909;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  align-items: center;
+}
+td {
+  color: #090909;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+img {
+  /* width: 25%;
+  height: 25%; */
+  background-size: 100% 100%;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.table tbody tr td {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table tbody tr td img {
+  width: 200px;
+  height: 200px;
+  max-width: 100%;
+  height: auto;
+}
