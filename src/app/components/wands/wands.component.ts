@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { WandsService } from '../services/wands.service';
-import { Wands } from '../models/wands';
 
 @Component({
   selector: 'app-wands',
