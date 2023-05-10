@@ -7,10 +7,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { HouseComponent } from './house/house.component';
 import { HousesComponent } from './houses/houses.component';
-import { WandsComponent } from './components/wands/wands.component';
+import { WandsComponent } from './wands/wands.component';
 
 @NgModule({
-  declarations: [AppComponent, HouseComponent, HousesComponent],
+  declarations: [AppComponent, HouseComponent, HousesComponent, WandsComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

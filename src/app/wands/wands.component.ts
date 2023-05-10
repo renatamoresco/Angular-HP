@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { WandsService } from '../services/wands.service';
+import { Wands } from '../models/wands';
+import { WandService } from '../services/wands.service';
 
 @Component({
   selector: 'app-wands',
@@ -12,7 +13,7 @@ export class WandsComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private wandService: WandsService
+    private wandService: WandService
   ) {}
 
   ngOnInit(): void {
