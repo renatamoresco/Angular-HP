@@ -1,4 +1,4 @@
-export interface Wands {
+export interface Wand {
   id: number;
   core: string;
   wood: string;

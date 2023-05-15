@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Wands } from '../models/wands';
-import { WandService } from '../services/wands.service';
+import { Wand } from '../../models/wand';
+import { WandService } from '../../services/wands.service';
 
 @Component({
   selector: 'app-wands',
@@ -9,7 +9,7 @@ import { WandService } from '../services/wands.service';
   styleUrls: ['./wands.component.css'],
 })
 export class WandsComponent implements OnInit {
-  wands: Wands = {} as Wands;
+  wands: Wand[] = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -19,14 +19,10 @@ export class WandsComponent implements OnInit {
   ngOnInit(): void {
     const routeParams = this.route.snapshot.paramMap;
     const wandIdFromRoute = Number(routeParams.get('wandId'));
-
-    this.getWandById(wandIdFromRoute);
+    this.getWands();
   }
 
-  getWandById(id: number) {
-    this.wandService.getWandById(id).subscribe((a) => {
-      console.log(a);
-      this.wands = a;
-    });
+  getWands(): void {
+    this.wandService.getWands().subscribe((wands) => (this.wands = wands));
   }
 }
