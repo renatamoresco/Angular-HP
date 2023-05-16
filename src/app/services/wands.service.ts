@@ -12,7 +12,7 @@ import { Wand } from '../models/wand';
   providedIn: 'root',
 })
 export class WandService {
-  url = 'https://legacy--api.herokuapp.com/api/v1/';
+  url = 'https://legacy--api.herokuapp.com/api/v1';
 
   constructor(private httpClient: HttpClient) {}
 

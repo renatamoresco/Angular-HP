@@ -1,5 +1,6 @@
 export interface Wand {
   id: number;
+  name: string;
   core: string;
   wood: string;
   length: number;

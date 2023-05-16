@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HouseService } from '../services/house.service';
 import { House } from '../models/house';
-import { ActivatedRoute } from '@angular/router';
-import { Wand } from '../models/wand';
 
 @Component({
   selector: 'app-root',
