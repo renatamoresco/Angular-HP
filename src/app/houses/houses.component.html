@@ -9,24 +9,17 @@
   <body>
     <div class="bg">
       <div>
-        <h2>Welcome to Horgwarts School</h2>
+        <h2>Welcome to Harry Potter World</h2>
       </div>
-      <a [routerLink]="['/wands']">Varinhas</a>
-      <a [routerLink]="['/books']">Livros</a>
-      <table class="table">
-        <thead></thead>
-        <tbody>
-          <tr *ngFor="let house of houses">
-            <!-- <td>{{ house.id }}</td> -->
-
-            <td>
-              <a [title]="house.members" [routerLink]="['/house', house.id]">
-                <img src="{{ house.image_url }}" alt="Minha Figura" />
-              </a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <a [routerLink]="['/wands']">Wands</a>
+      <a [routerLink]="['/books']">Books</a>
+      <div class="horizontal-container">
+        <div class="item" *ngFor="let house of houses">
+          <a [title]="house.members" [routerLink]="['/house', house.id]">
+            <img src="{{ house.image_url }}" alt="Minha Figura" />
+          </a>
+        </div>
+      </div>
     </div>
   </body>
 </html>
