@@ -9,6 +9,8 @@ import { HouseComponent } from './house/house.component';
 import { HousesComponent } from './houses/houses.component';
 import { WandsComponent } from './components/wands/wands.component';
 import { BookComponent } from './books/books.component';
+import { CharactersComponent } from './characters/characters.component';
+import { SpeciesComponent } from './species/species.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { BookComponent } from './books/books.component';
     HousesComponent,
     WandsComponent,
     BookComponent,
+    CharactersComponent,
+    SpeciesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],

@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Native</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let specie of species">
+      <td>{{ specie.id }}</td>
+      <td>{{ specie.name }}</td>
+      <td>{{ specie.native }}</td>
+    </tr>
+  </tbody>
+</table>

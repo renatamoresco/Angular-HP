@@ -11,7 +11,9 @@
       <div>
         <h2>Welcome to Harry Potter World</h2>
       </div>
+      <a [routerLink]="['/characters']">Characters</a>
       <a [routerLink]="['/wands']">Wands</a>
+      <a [routerLink]="['/species']">Species</a>
       <a [routerLink]="['/books']">Books</a>
       <div class="horizontal-container">
         <div class="item" *ngFor="let house of houses">
@@ -21,5 +23,6 @@
         </div>
       </div>
     </div>
+    <p>click on the houses and learn more</p>
   </body>
 </html>
