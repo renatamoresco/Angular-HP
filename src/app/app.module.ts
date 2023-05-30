@@ -11,6 +11,9 @@ import { WandsComponent } from './components/wands/wands.component';
 import { BookComponent } from './books/books.component';
 import { CharactersComponent } from './characters/characters.component';
 import { SpeciesComponent } from './species/species.component';
+import { SpinnerComponent } from './spinner/spinner.component';
+import { LoadingInterceptor } from './loading.interceptor';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,9 +24,12 @@ import { SpeciesComponent } from './species/species.component';
     BookComponent,
     CharactersComponent,
     SpeciesComponent,
+    SpinnerComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,6 +1,6 @@
-<h2>Wands</h2>
-
-<table>
+<app-spinner></app-spinner>
+<h2 *ngIf="wands.length > 0">Wands</h2>
+<table *ngIf="wands.length > 0">
   <thead>
     <tr>
       <th>ID</th>

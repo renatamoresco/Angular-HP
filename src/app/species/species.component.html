@@ -1,4 +1,7 @@
-<table>
+<app-spinner></app-spinner>
+<h2 *ngIf="species.length > 0">Species</h2>
+
+<table *ngIf="species.length > 0">
   <thead>
     <tr>
       <th>ID</th>

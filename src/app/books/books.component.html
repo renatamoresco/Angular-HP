@@ -1,6 +1,7 @@
-<h2>Livros</h2>
+<app-spinner></app-spinner>
+<h2 *ngIf="books.length > 0">Books</h2>
 
-<table>
+<table *ngIf="books.length > 0">
   <thead>
     <tr>
       <th>ID</th>

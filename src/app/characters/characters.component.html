@@ -1,6 +1,6 @@
-<h2>Personagens</h2>
-
-<table>
+<app-spinner></app-spinner>
+<h2 *ngIf="characters.length > 0">Personagens</h2>
+<table *ngIf="characters.length > 0">
   <thead>
     <tr>
       <th>ID</th>
