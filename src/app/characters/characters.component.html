@@ -1,20 +1,22 @@
 <app-spinner></app-spinner>
-<h2 *ngIf="characters.length > 0">Personagens</h2>
-<table *ngIf="characters.length > 0">
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Name</th>
-      <th>Species</th>
-      <th>Image</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let character of characters">
-      <td>{{ character.id }}</td>
-      <td>{{ character.name }}</td>
-      <td>{{ character.species }}</td>
-      <img src="{{ character.image_url }}" alt="imagem" />
-    </tr>
-  </tbody>
-</table>
+<h2 *ngIf="characters.length > 0">Characters</h2>
+<div class="container" *ngIf="characters.length > 0">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Species</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let character of characters">
+        <td>{{ character.id }}</td>
+        <td>{{ character.name }}</td>
+        <td>{{ character.species }}</td>
+        <img src="{{ character.image_url }}" alt="imagem" />
+      </tr>
+    </tbody>
+  </table>
+</div>

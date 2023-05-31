@@ -1,19 +1,20 @@
 <app-spinner></app-spinner>
 <h2 *ngIf="species.length > 0">Species</h2>
-
-<table *ngIf="species.length > 0">
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Name</th>
-      <th>Native</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let specie of species">
-      <td>{{ specie.id }}</td>
-      <td>{{ specie.name }}</td>
-      <td>{{ specie.native }}</td>
-    </tr>
-  </tbody>
-</table>
+<div class="container" *ngIf="species.length > 0">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Native</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let specie of species">
+        <td>{{ specie.id }}</td>
+        <td>{{ specie.name }}</td>
+        <td>{{ specie.native }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

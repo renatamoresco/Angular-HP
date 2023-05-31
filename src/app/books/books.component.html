@@ -1,19 +1,20 @@
 <app-spinner></app-spinner>
 <h2 *ngIf="books.length > 0">Books</h2>
-
-<table *ngIf="books.length > 0">
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Title</th>
-      <th>Image</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let book of books">
-      <td>{{ book.id }}</td>
-      <td>{{ book.title }}</td>
-      <img src="{{ book.image_url }}" alt="imagem" />
-    </tr>
-  </tbody>
-</table>
+<div class="container" *ngIf="books.length > 0">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of books">
+        <td>{{ book.id }}</td>
+        <td>{{ book.title }}</td>
+        <img src="{{ book.image_url }}" alt="imagem" />
+      </tr>
+    </tbody>
+  </table>
+</div>
